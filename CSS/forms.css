@@ -1,0 +1,77 @@
+@import url(base.css);
+
+.signup-page {
+  padding-top: 60px;
+}
+.signup-title {
+  text-align: center;
+  font-size: 30px;
+  color: #2e4c6d;
+}
+.signup-form {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .signup-form {
+    width: 500px;
+    margin: auto;
+  }
+}
+.signup-form label,
+.signup-form input:not([type="checkbox"]),
+/* burada yaptığımız not işlemi ile inputlardan tipi checkbox olanları seçmesini engelleriz  */
+.signup-form select {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+.signup-form input[type="checkbox"],
+.signup-form input[type="checkbox"] + label {
+  display: inline-block;
+  width: auto;
+  margin-top: 15px;
+}
+.signup-form button[type="submit"] {
+  display: block;
+  margin-top: 15px;
+  padding: 5px 7px;
+  background-color: #4c3a51;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+}
+
+.signup-form button[type="submit"]:hover {
+  background-color: white;
+  color: #4c3a51;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+.signup-form input:not([type="checkbox"]),
+.signup-form select {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+}
+.signup-form input:not([type="checkbox"]):focus,
+.signup-form select:focus {
+  outline: none;
+  /* dış çerçeveyi alır  */
+  background-color: greenyellow;
+  border: 1px solid green;
+  color: #fff;
+}
+.signup-form input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #2e4c6d;
+  vertical-align: bottom;
+  border-radius: 50%;
+}
+.signup-form input[type="checkbox"]:hover {
+  background: gray;
+}
+.signup-form input[type="checkbox"]:checked {
+  background: #fc997c;
+}

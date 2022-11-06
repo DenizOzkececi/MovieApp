@@ -1,0 +1,101 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Diplomata SC", cursive;
+  font-family: "PT Serif", serif;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.4rem;
+}
+.row {
+  margin-bottom: 50px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col-3 {
+  float: left;
+  width: 33.3%;
+}
+.col-2 {
+  float: left;
+  width: 50%;
+  height: 350px;
+}
+.col-4 {
+  float: left;
+  width: 25%;
+}
+@media (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+.container {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
+.img-fluid {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  html {
+    font-size: 68%;
+  }
+  .container {
+    margin: 0 auto;
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 72%;
+  }
+  .container {
+    margin: 0 auto;
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 74%;
+  }
+  .container {
+    margin: 0 auto;
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 78%;
+  }
+  .container {
+    margin: 0 auto;
+    width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 80%;
+  }
+  .container {
+    margin: 0 auto;
+    width: 1320px;
+  }
+}
